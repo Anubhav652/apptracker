@@ -18,7 +18,7 @@ If any of the below is true, a job is considered to be duplicate and only the fi
 4. Follow `gspread` installation requirements found at: https://docs.gspread.org/en/v6.1.2/oauth2.html#for-end-users-using-oauth-client-id **Make sure to follow the guide for: (For end users: Using OAuth Client ID)**. Save your key wherever you'd like and put the location inside `settings.py` inside **KEY_FILE_PATH**.
 5. Clone this Google Sheet: https://docs.google.com/spreadsheets/d/1oOwbW--483RkdXymdyyHRpCnuzcJ-7JkdGZEF8c_1nw/edit?usp=sharing
 6. Feel free to add any columns you want, but **don't modify** the current columns order, or the worksheet names (Applied and Ignore)
-7. Make sure to grant your OAuth App access to this Google Sheet. Find the Google Sheet key and put it inside `settings.py` inside **SHEET_KEY**.
+7. Make sure to grant your OAuth App access to this Google Sheet. Find the Google Sheet spreadsheet key, and put it in a file. Then, put the file location inside `settings.py` in **SHEET_KEY_FILE**.
 8. Run with `python gui.py`
 
 ### To-do / Potential future updates
