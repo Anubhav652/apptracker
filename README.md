@@ -1,7 +1,7 @@
 ### Description
 ![image](image.png)
 
-I got really lazy to check which jobs I've applied to and not applied to from the two current GitHub repos: https://github.com/Ouckah/Summer2025-Internships and https://github.com/SimplifyJobs/Summer2025-Internships. So I made this application which allows you to track which jobs you've applied to from two current GitHub repos and only shows job listings that you have not applied to. 
+I got really lazy to check which jobs I've applied to and not applied to from the two current GitHub repos: https://github.com/Ouckah/Summer2025-Internships and https://github.com/SimplifyJobs/Summer2025-Internships. So I made this application which allows you to track which jobs you've applied to from  GitHub repos and only shows job listings that you have not applied to. 
 
 It attempts to remove duplicate listings between different job boards (there are still some duplicates - I'm taking the approach of only removing guaranteed duplicates to avoid accidental removal of a job listing you've not applied to), and you can refresh program/open it again to see which jobs you have not reviewed yet - this way, you can be 100% sure you have not missed a job listing.
 
