@@ -14,7 +14,9 @@ class Sheets:
     def __init__(self):
         """Initializes the gspread objects used for making calls to Google Sheets. Loads data into self.applied and self.discarded. """
         self.gc = gspread.service_account(filename=Settings.KEY_FILE_PATH)
-        self.sh = self.gc.open_by_key(Settings.SHEET_KEY)
+
+        with open(Settings.SHEET_KEY_FILE, "r") as file:
+            self.sh = self.gc.open_by_key(file.read())
 
         self.applied_ws = self.sh.worksheet("Applications")
         self.discarded_ws = self.sh.worksheet("Ignore")

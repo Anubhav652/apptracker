@@ -1,6 +1,6 @@
 # Private settings...
 key.json
-settings.py
+sheet_key.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

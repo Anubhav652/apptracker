@@ -38,6 +38,3 @@ def replace_md_links(md, f):
         newmd = newmd.replace(f"({(r[1])})", f(r[1]))
     
     return newmd.replace("**", "")
-
-import yarl
-print(yarl.URL("https://stokespace.com/careers/current-openings?gh_jid=5258722004") == yarl.URL("https://stokespace.com/careers/current-openings/?gh_jid=5258722004"))
