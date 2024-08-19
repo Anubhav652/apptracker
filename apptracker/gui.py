@@ -1,11 +1,10 @@
 import tkinter as tk
 from tkinter import font
-
 from tkinter import ttk
-from main import Main 
 import threading
 import webbrowser
 import pyperclip
+from apptracker.backend import Backend 
 
 # GUI Structure idealogy adopted from: https://stackoverflow.com/a/17470842
 # Button callback and threading stuff from: https://stackoverflow.com/a/64038231 tysm!
@@ -15,7 +14,7 @@ class GUI(tk.Frame):
 
         self.loading_event = threading.Event()
 
-        self.backend = Main()
+        self.backend = Backend()
         self.root = root
 
         self.job_count_label = ttk.Label(self, text="Loading....")

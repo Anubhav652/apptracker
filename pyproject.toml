@@ -1,0 +1,8 @@
+[project]
+name = "apptracker"
+version = "0.1.0"
+description = "Tracks SWE Internship job applications from popular Github Repos and creates a tracker around it. Uses Google Sheets for database."
+
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]

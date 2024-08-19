@@ -1,6 +1,6 @@
-# Private settings...
-key.json
-sheet_key.txt
+# Private settings
+apptracker/key.json
+apptracker/sheet_key.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

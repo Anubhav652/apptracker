@@ -1,9 +1,11 @@
 import gspread
-from settings import Settings
-from sheet_row import SheetRow
+
+from apptracker.trackers.tracker_settings import JOB_LISTINGS_ACTUAL_LINKS
+from apptracker.settings import Settings
+from apptracker.sheet_row import SheetRow
+
 from time import time
 from enum import Enum
-from typing import Optional
 
 class JobStatus(Enum):
     NOT_APPLIED = 1
@@ -172,7 +174,7 @@ class Sheets:
     def get_job_status(self, company_name : str, job_title : str, job_location : str, job_url : str) -> JobStatus:
         """Gets job status; for a job to match, there must be an exact company_name, job_title and job_location match. The URL is NOT used for job matching. Or one job URL matching."""
         # first, we do URL matching.
-        if job_url not in Settings.JOB_LISTINGS_ACTUAL_LINKS.values():
+        if job_url not in JOB_LISTINGS_ACTUAL_LINKS.values():
             if job_url in self.applied_by_url:
                 return JobStatus.APPLIED
             
