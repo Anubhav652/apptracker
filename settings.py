@@ -1,5 +1,5 @@
 class Settings:
-    SHEET_KEY = "1UXTR0ytZVMkNvZ902YSy-e_GKjJrCc2rtlnckBcWs3U"
+    SHEET_KEY = "1DWafaW#Esfse-e_GKjJrCc2rtlnckBcWs3U"
     KEY_FILE_PATH = "key.json"
 
     JOB_LISTING_LINKS = {
