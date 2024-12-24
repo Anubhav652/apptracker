@@ -6,6 +6,7 @@ from apptracker.trackers.trackerabc import TrackerABC
 from apptracker.trackers.joblisting import JobListing
 from apptracker.trackers.ouckah import OuckahTracker
 from apptracker.trackers.simplify import SimplifyTracker
+from apptracker.trackers.northwesternfintech import NorthwesternFintech
 import apptracker.trackers.tracker_settings as tracker_settings
 
 class Tracker:
@@ -30,6 +31,9 @@ class Tracker:
 
                 case "Pitt CSC & Simplify":
                     self.trackers.append(SimplifyTracker(self.session))
+
+                case "Northwestern Fintech Club":
+                    self.trackers.append(NorthwesternFintech(self.session))
 
                 case _:
                     print(f"Tracker not found: {tracker}")
